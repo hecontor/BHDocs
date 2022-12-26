@@ -4,9 +4,9 @@ Para identificar rapidamente tablas, estructuras y campos en multiples bases de 
 > ORCL
 
 Actualmente los datos en `Fenix` son los recomendados a atulizar a la hora de realizar algun reporte
-| TABLE NAME     | DESCRIPCIÓN                                                             |
-| -------------- | ----------------------------------------------------------------------- |
-| `CLIENTES`     | ESTA TABLA BLABLABLABALABA                                              |
+| TABLE NAME     | DESCRIPCIÓN                                                                              |
+| -------------- | -----------------------------------------------------------------------------------------|
+| `CLIENTES`     | ESTA TABLA ES CONTIENE TODOS LOS CLIENTES TANTO PERSONAS FISICAS COMO PERSONAS JURIDICAS |
 ```
 select * 
   from DICCIONARIO_AS400
