@@ -13,8 +13,16 @@ Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algu
 
 
 > AS400
--  <sub> **T RANSACCIONES ** </sub> 
 
+Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN` 
+-  <sup> TRANSACCIONES  </sup> 
+
+
+| TABLA          | DESCRIPCIÓN                                                                              |
+| -------------- | -----------------------------------------------------------------------------------------|
+| `ACHTRAN`      | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES ACH                                          |
+| `FNCPLOG`      | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES DE <sub> INTERNA </sub>                      |                                                      
+| `BRTRAN`       | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES DE <sub> BANKOFFICE </sub>                   |
 
 ```
 select * 
