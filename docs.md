@@ -1,7 +1,11 @@
 # DOCUEMNTACIÓN BHD 
 Para identificar rapidamente tablas, estructuras y campos en multiples bases de datos con los cuales he trabajado en BHD.
-## TARJETAS DE CRÉDITO
-###### ORCL
+## INFORMACION DE CLIENTES
+> ORCL
+Actualmente los datos en `Fenix` son los recomendados a atulizar a la hora de realizar algun reporte
+| TABLE NAME     | DESCRIPCIÓN                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| `CLIENTES`     | ESTA TABLA BLABLABLABALABA                                              |
 ```
 select * 
   from DICCIONARIO_AS400
