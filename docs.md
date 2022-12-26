@@ -3,7 +3,7 @@ Para identificar rapidamente tablas, estructuras y campos en multiples bases de 
 ## INFORMACION DE CLIENTES
 > ORCL
 
-Actualmente los datos en `Fenix` son los recomendados a atulizar a la hora de realizar algun reporte
+Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS`
 | TABLE NAME     | DESCRIPCIÓN                                                                              |
 | -------------- | -----------------------------------------------------------------------------------------|
 | `CLIENTES`     | ESTA TABLA ES CONTIENE TODOS LOS CLIENTES TANTO PERSONAS FISICAS COMO PERSONAS JURIDICAS |
