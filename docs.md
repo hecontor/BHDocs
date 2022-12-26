@@ -1,12 +1,14 @@
-# DOCUEMNTACIÓN BHD 
+# DOCUMENTACIÓN BHD 
 Para identificar rapidamente tablas, estructuras y campos en multiples bases de datos con los cuales he trabajado en BHD.
 ## INFORMACION DE CLIENTES
-> ORCL
+> FENÍX
 
 Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS`
 | TABLE NAME     | DESCRIPCIÓN                                                                              |
 | -------------- | -----------------------------------------------------------------------------------------|
 | `CLIENTES`     | ESTA TABLA ES CONTIENE TODOS LOS CLIENTES TANTO PERSONAS FISICAS COMO PERSONAS JURIDICAS |
+| `PERSONAS`     |
+| `EMPRESAS`     |
 ```
 select * 
   from DICCIONARIO_AS400
