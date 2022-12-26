@@ -1,5 +1,7 @@
 # DOCUMENTACIÓN BHD 
 Para identificar rapidamente tablas, estructuras y campos en multiples bases de datos con los cuales he trabajado en BHD.
+
+
 ## INFORMACION DE CLIENTES
 > FENÍX
 
@@ -12,11 +14,9 @@ Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algu
 
 
 
-> AS400
-
-Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN` 
 ## TRANSACCIONES  
-
+> AS400
+Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN` 
 
 | TABLA          | DESCRIPCIÓN                                                                              |
 | -------------- | -----------------------------------------------------------------------------------------|
