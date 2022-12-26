@@ -13,7 +13,7 @@ Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algu
 
 
 > AS400
-- *TRANSACCIONES
+- *TRANSACCIONES*
 
 
 ```
