@@ -16,6 +16,7 @@ Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algu
 
 ## TRANSACCIONES  
 > AS400
+
 Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN` 
 
 | TABLA          | DESCRIPCIÓN                                                                              |
