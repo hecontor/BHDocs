@@ -15,7 +15,7 @@ Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algu
 > AS400
 
 Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN` 
--  <sup> TRANSACCIONES  </sup> 
+## TRANSACCIONES  
 
 
 | TABLA          | DESCRIPCIÓN                                                                              |
@@ -24,11 +24,15 @@ Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al
 | `FNCPLOG`      | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES DE <sub> INTERNA </sub>                      |                                                      
 | `BRTRAN`       | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES DE <sub> BANKOFFICE </sub>                   |
 
+
+Puedes utilizar el siguiente codigo para conocer la estructura de un archivo o tabla de AS400, conocer sus campos, tipos de datos y longitud de los mismos : 
+
 ```
 select * 
   from DICCIONARIO_AS400
-  where  trim(long_table_name)='TABLE_NAME_IN_AS400';
+  where trim(long_table_name)='BRTRAN' and TRIM(LIBRARY)='BHDBREFIL';
 ```
 
+Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esquema.
 
 
