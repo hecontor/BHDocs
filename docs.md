@@ -4,11 +4,18 @@ Para identificar rapidamente tablas, estructuras y campos en multiples bases de 
 > FENÍX
 
 Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS`
-| TABLE NAME     | DESCRIPCIÓN                                                                              |
+| TABLA          | DESCRIPCIÓN                                                                              |
 | -------------- | -----------------------------------------------------------------------------------------|
 | `CLIENTES`     | ESTA TABLA ES CONTIENE TODOS LOS CLIENTES TANTO PERSONAS FISICAS COMO PERSONAS JURIDICAS |
-| `PERSONAS`     |
+| `PERSONAS`     |                                                     
 | `EMPRESAS`     |
+
+
+
+> AS400
+>TRANSACCIONES
+
+
 ```
 select * 
   from DICCIONARIO_AS400
