@@ -6,11 +6,12 @@ Para identificar rapidamente tablas, estructuras y campos en multiples bases de 
 > FENÍX
 
 Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS`
-| TABLA          | DESCRIPCIÓN                                                                              |
-| -------------- | -----------------------------------------------------------------------------------------|
-| `CLIENTES`     | ESTA TABLA ES CONTIENE TODOS LOS CLIENTES TANTO PERSONAS FISICAS COMO PERSONAS JURIDICAS |
-| `PERSONAS`     |                                                     
-| `EMPRESAS`     |
+
+| ESQUEMA        | TABLA          | DESCRIPCIÓN                                                                              |
+| -------------- | -------------- | -----------------------------------------------------------------------------------------|
+| `DT_CONTACTOS` | `CLIENTES`     | ESTA TABLA CONTIENE TODOS LOS CLIENTES TANTO PERSONAS FISICAS COMO PERSONAS JURIDICAS |
+| `DT_CONTACTOS` | `PERSONAS`     | ESTA TABLA CONTIENE LA INFORMACIÓN DEL CLIENTE E INFO DE PERONSAS RELACIONADAS CON EL CLIENTE |                         
+| `DT_CONTACTOS` | `EMPRESAS`     | ESTA TABLA CONTIENE INFORMACION DE CADA EMPRESA, CLIENTES DE BANCO |
 
 
 
