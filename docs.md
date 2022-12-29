@@ -34,7 +34,13 @@ select *
   from DICCIONARIO_AS400
   where trim(long_table_name)='BRTRAN' and TRIM(LIBRARY)='BHDBREFIL';
 ```
-
 Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esquema.
 
+> ORCL
+
+| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
+| ----------- | -------------- | -----------------------------------------------------------------------------------------|
+| `DWADMIN` | `NEPT_REPOSITORIO_TRANSACCIONES`      | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP |
+| `CAMBIOTRAN`| `FNCPLOG`      | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> INTERNA </sub>                         |
+| `BHDBREFIL` | `BRTRAN`       | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> BANKOFFICE </sub>                      |
 
