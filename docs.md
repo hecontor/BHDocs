@@ -22,7 +22,7 @@ select * from all_db_links;
 | ESQUEMA        | TABLA          | DESCRIPCIÓN                                                                              |
 | -------------- | -------------- | -----------------------------------------------------------------------------------------|
 | `EDWIN`        | `TMP_CARTERA`  | ESTA TABLA CONTIENE INFORMACIÓN DEL <sub>CARTERIZADO</sub> y <sub>OFICINA</sub> DE TODOS LOS CLIENTES |
-| `DWADMIN`      | `CLIENTES`  | ESTA TABLA CONTIENE INFORMACIÓN DEL <sub>CARTERIZADO</sub> y <sub>OFICINA</sub> DE TODOS LOS CLIENTES |
+| `DWADMIN`      | `CLIENTES`  | CONTIENE TODOS LOS CLIENTES DE BANCO SIN DINTINCIÓN ALGUNA Y CONSIDERA CLIENTES CONCOMUNADOS, AUNQUE TIENE MENOS COLUMNAS|
 
 
 
