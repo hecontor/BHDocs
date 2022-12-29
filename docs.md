@@ -5,7 +5,7 @@ Para identificar rapidamente tablas, estructuras y campos en multiples bases de 
 ## INFORMACION DE CLIENTES
 > FENÍX
 
-Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS` y puedes acceder a los datos de producción en fenix sí le agregas el Dblink ```@DHW_PREMISA.REGRESS.RDBMS.DEV.US.ORACLE.COM```
+Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS`
 
 | ESQUEMA        | TABLA          | DESCRIPCIÓN                                                                              |
 | -------------- | -------------- | -----------------------------------------------------------------------------------------|
@@ -13,6 +13,10 @@ Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algu
 | `DT_CONTACTOS` | `PERSONAS`     | ESTA TABLA CONTIENE LA INFORMACIÓN DEL CLIENTE E INFO DE PERONSAS RELACIONADAS CON EL CLIENTE |                         
 | `DT_CONTACTOS` | `EMPRESAS`     | ESTA TABLA CONTIENE INFORMACION DE CADA EMPRESA, CLIENTES DE BANCO |
 
+Desde <sub>ORCL</sub> puedes acceder a los datos de producción en fenix sí le agregas el Dblink `@DHW_PREMISA.REGRESS.RDBMS.DEV.US.ORACLE.COM` y en ORCL puedes ver todos los Dblink de orcl en la siguiente tabla : 
+``` 
+select * from all_db_links;
+```
 
 
 ## TRANSACCIONES  
