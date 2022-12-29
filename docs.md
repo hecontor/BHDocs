@@ -17,6 +17,14 @@ Desde <sub>ORCL</sub> puedes acceder a los datos de producción en fenix sí le 
 ``` 
 select * from all_db_links;
 ```
+> ORCL
+
+| ESQUEMA        | TABLA          | DESCRIPCIÓN                                                                              |
+| -------------- | -------------- | -----------------------------------------------------------------------------------------|
+| `EDWIN`        | `TMP_CARTERA`  | ESTA TABLA CONTIENE INFORMACIÓN DEL <sub>CARTERIZADO</sub> y <sub>OFICINA</sub> DE TODOS LOS CLIENTES |
+| `DWADMIN`      | `CLIENTES`  | ESTA TABLA CONTIENE INFORMACIÓN DEL <sub>CARTERIZADO</sub> y <sub>OFICINA</sub> DE TODOS LOS CLIENTES |
+
+
 
 
 ## TRANSACCIONES  
@@ -49,4 +57,11 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | `BHDBREFIL` | `BRTRAN`       | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> BANKOFFICE </sub>                      |
 
 
+## TABLAS DE DIMENSIONES
+>ORCL
 
+| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
+| ----------- | -------------- | -----------------------------------------------------------------------------------------|
+| `DWADMIN` | `OFICINA` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES |
+| `DWADMIN` | `CARTERA` | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                         |
+| `DWADMIN` | `BRTRAN`  |  <sub> BANKOFFICE </sub>                      |
