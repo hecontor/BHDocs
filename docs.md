@@ -22,8 +22,8 @@ select * from all_db_links;
 | ESQUEMA        | TABLA          | DESCRIPCIÓN                                                                              |
 | -------------- | -------------- | -----------------------------------------------------------------------------------------|
 | `EDWIN`        | `TMP_CARTERA`  | ESTA TABLA CONTIENE INFORMACIÓN DEL <sub>CARTERIZADO</sub> y <sub>OFICINA</sub> DE TODOS LOS CLIENTES |
-| `DWADMIN`      | `CLIENTES`     | CONTIENE TODOS LOS CLIENTES DE BANCO SIN DINTINCIÓN ALGUNA Y CONSIDERA CLIENTES CONCOMUNADOS, AUNQUE TIENE MENOS COLUMNAS|
-| `DWADMIN`      | `PERSONA`      | CONTIENE TODOS INFORMACIÓN PERSONAL DE CADA CLIENTE CON RELACIÓN A LA TABLA `DWADMIN.CLIENTES` (No. Telefonos, Direcciones, Profesión , etc)|
+| `DWADMIN`      | `CLIENTES` | CONTIENE TODOS LOS CLIENTES DE BANCO SIN DINTINCIÓN ALGUNA Y CONSIDERA CLIENTES CONCOMUNADOS, AUNQUE TIENE MENOS COLUMNAS|
+| `DWADMIN`      | `PERSONA` | CONTIENE TODOS INFORMACIÓN PERSONAL DE CADA CLIENTE CON RELACIÓN A LA TABLA `DWADMIN.CLIENTES` (No. Telefonos, Direcciones, Profesión , etc)|
 
 
 
@@ -65,4 +65,5 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | ----------- | -------------- | -----------------------------------------------------------------------------------------|
 | `DWADMIN` | `OFICINA` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES |
 | `DWADMIN` | `CARTERA` | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                         |
-| `DWADMIN` | `BRTRAN`  |  <sub> BANKOFFICE </sub>                      |
+| `DWADMIN` | `CAJEROS_ATM` | DIMENSIÓN DE CADA CAJERO ACTIVO |
+| `TESORERIA` | `CAJEROS` | DIMENSIÓN HISTORICO DE CADA CAJERO |
