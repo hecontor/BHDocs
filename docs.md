@@ -5,7 +5,7 @@ Para identificar rapidamente tablas, estructuras y campos en multiples bases de 
 ## INFORMACION DE CLIENTES
 > FENÍX
 
-Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS`
+Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS` y puedes acceder a los datos de producción en fenix sí le agregas el Dblink ```@DHW_PREMISA.REGRESS.RDBMS.DEV.US.ORACLE.COM```
 
 | ESQUEMA        | TABLA          | DESCRIPCIÓN                                                                              |
 | -------------- | -------------- | -----------------------------------------------------------------------------------------|
@@ -43,4 +43,6 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | `DWADMIN` | `NEPT_REPOSITORIO_TRANSACCIONES`      | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP |
 | `CAMBIOTRAN`| `FNCPLOG`      | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> INTERNA </sub>                         |
 | `BHDBREFIL` | `BRTRAN`       | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> BANKOFFICE </sub>                      |
+
+
 
