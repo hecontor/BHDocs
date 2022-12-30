@@ -29,7 +29,7 @@ select * from all_db_links;
 
 
 ## TRANSACCIONES  
-> AS400
+#### AS400
 
 Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN`, sí consultas con el esquema (dwadmin) y el nombre de la tabla no deberias de tener problemas para conseguirla.
 
@@ -49,7 +49,7 @@ select *
 ```
 Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esquema.
 
-> ORCL
+#### DWADMIN
 
 | ESQUEMA     | TABLA                            | DESCRIPCIÓN                                                                              |
 | ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
@@ -57,19 +57,33 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | `DWADMIN`   | `TRANSACCIONES_CUENTAS`          | *LEVANTAR INFORMACIÓN*                                                                   |
 | `TESORERIA` | `TRANSACCIONES_CAJERO`           | CONTIENE LAS TRANSACCIONES POR CAJERO O<sub> ATMs </sub>                                 |
 
+#### TESORERIA
+
+
+| ESQUEMA     | TABLA                            | DESCRIPCIÓN                                                                              |
+| ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
+| `TESORERIA` | `TRANSACCIONES_CAJERO`           | CONTIENE LAS TRANSACCIONES POR CAJERO O<sub> ATMs </sub>                                 |
+
 
 ## TABLAS DE DIMENSIONES
->ORCL
+#### DWADMIN
 
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
 | `DWADMIN`   | `OFICINA`      | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
+| `DWADMIN`   | `OFICIALES`    | CONTIENE INFORMACIÓN REFERENTE A LAS OFICIALES/GERENTES DE SUCURSAL                                        |
 | `DWADMIN`   | `CARTERA`      | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                                      | 
 | `DWADMIN`   | `CAJEROS_ATM`  | DIMENSIÓN DE CADA CAJERO ACTIVO                                                                            |
-| `TESORERIA` | `CAJEROS`      | DIMENSIÓN HISTORICO DE CADA CAJERO                                                                         |
 
-> FENIX
+#### FENIX
 
 | ESQUEMA          | TABLA          | DESCRIPCIÓN                                                                                                |
 | ---------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
 | `DT_DIMENSIONES` | `DIM_OFICINAS` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
+| `DT_DIMENSIONES` | `DIM_OFICIALES`| CONTIENE INFORMACIÓN REFERENTE A LOS OFICIALES/GERENTES DE SUCURSALES                                      |
+
+#### TESORERIA
+
+| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
+| ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
+| `TESORERIA` | `CAJEROS`      | DIMENSIÓN HISTORICO DE CADA CAJERO                                                                         |
