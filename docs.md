@@ -54,7 +54,7 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------|
 | `DWADMIN` | `NEPT_REPOSITORIO_TRANSACCIONES`      | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP |
-| `CAMBIOTRAN`| `FNCPLOG`      | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> INTERNA </sub>                         |
+| `DWADMIN`| `TRANSACCIONES_CUENTAS`      | *LEVANTAR INFORMACIÓN* |
 | `BHDBREFIL` | `BRTRAN`       | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> BANKOFFICE </sub>                      |
 
 
@@ -67,3 +67,9 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | `DWADMIN` | `CARTERA` | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                         |
 | `DWADMIN` | `CAJEROS_ATM` | DIMENSIÓN DE CADA CAJERO ACTIVO |
 | `TESORERIA` | `CAJEROS` | DIMENSIÓN HISTORICO DE CADA CAJERO |
+
+> FENIX
+
+| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
+| ----------- | -------------- | -----------------------------------------------------------------------------------------|
+| `DT_DIMENSIONES` | `DIM_OFICINAS` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES |
