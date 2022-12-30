@@ -86,3 +86,12 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
 | `TESORERIA` | `CAJEROS`      | DIMENSIÓN HISTORICO DE CADA CAJERO                                                                         |
+
+
+## PRODUCTOS [TARJETA DE CREDITOS/DEBITO,PRESTAMOS, CERTIDICADOS]
+#### SAT
+En `SAT` podremos encontrar todo lo referente a ... Y con el Dblink de `Sunrise` podremos acceder a data verificada
+
+| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
+| ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
+| ` `         | `SAT_TARJETA`  | CONTIENE TODAS LAS TARJETAS YA SEA `TC, TC O TP` EN EL CAMPO `TIPOTARJ`                                    |
