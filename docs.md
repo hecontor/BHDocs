@@ -55,7 +55,6 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 | ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
 | `DWADMIN`   | `NEPT_REPOSITORIO_TRANSACCIONES` | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP                                     |
 | `DWADMIN`   | `TRANSACCIONES_CUENTAS`          | *LEVANTAR INFORMACIÓN*                                                                   |
-| `TESORERIA` | `TRANSACCIONES_CAJERO`           | CONTIENE LAS TRANSACCIONES POR CAJERO O<sub> ATMs </sub>                                 |
 
 #### TESORERIA
 
