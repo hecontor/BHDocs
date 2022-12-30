@@ -51,25 +51,25 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 
 > ORCL
 
-| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
-| ----------- | -------------- | -----------------------------------------------------------------------------------------|
-| `DWADMIN` | `NEPT_REPOSITORIO_TRANSACCIONES`      | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP |
-| `DWADMIN`| `TRANSACCIONES_CUENTAS`      | *LEVANTAR INFORMACIÓN* |
-| `BHDBREFIL` | `BRTRAN`       | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES <sub> BANKOFFICE </sub>                      |
+| ESQUEMA     | TABLA                            | DESCRIPCIÓN                                                                              |
+| ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
+| `DWADMIN`   | `NEPT_REPOSITORIO_TRANSACCIONES` | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP                                     |
+| `DWADMIN`   | `TRANSACCIONES_CUENTAS`          | *LEVANTAR INFORMACIÓN*                                                                   |
+| `TESORERIA` | `TRANSACCIONES_CAJERO`           | CONTIENE LAS TRANSACCIONES POR CAJERO O<sub> ATMs </sub>                                 |
 
 
 ## TABLAS DE DIMENSIONES
 >ORCL
 
-| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
-| ----------- | -------------- | -----------------------------------------------------------------------------------------|
-| `DWADMIN` | `OFICINA` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES |
-| `DWADMIN` | `CARTERA` | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                         |
-| `DWADMIN` | `CAJEROS_ATM` | DIMENSIÓN DE CADA CAJERO ACTIVO |
-| `TESORERIA` | `CAJEROS` | DIMENSIÓN HISTORICO DE CADA CAJERO |
+| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
+| ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
+| `DWADMIN`   | `OFICINA`      | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
+| `DWADMIN`   | `CARTERA`      | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                                      | 
+| `DWADMIN`   | `CAJEROS_ATM`  | DIMENSIÓN DE CADA CAJERO ACTIVO                                                                            |
+| `TESORERIA` | `CAJEROS`      | DIMENSIÓN HISTORICO DE CADA CAJERO                                                                         |
 
 > FENIX
 
-| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
-| ----------- | -------------- | -----------------------------------------------------------------------------------------|
-| `DT_DIMENSIONES` | `DIM_OFICINAS` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES |
+| ESQUEMA          | TABLA          | DESCRIPCIÓN                                                                                                |
+| ---------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
+| `DT_DIMENSIONES` | `DIM_OFICINAS` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
