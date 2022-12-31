@@ -3,6 +3,7 @@ Para identificar rapidamente tablas, estructuras y campos en multiples bases de 
 
 ## FENÍX
 Actualmente los datos en `Fenix` son los recomendados a la hora de realizar algun reporte, el esquema `DT_CONTACTOS`
+
 #### INFORMACION DE CLIENTES
 *Investigar origen de esta data*
 
@@ -16,33 +17,30 @@ Desde <sub>ORCL</sub> puedes acceder a los datos de producción en fenix sí le 
 ``` 
 select * from all_db_links;
 ```
-
 #### DIMENSIONES 
 *Investigar origen de esta data*
+
 | ESQUEMA          | TABLA          | DESCRIPCIÓN                                                                                                |
 | ---------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
 | `DT_DIMENSIONES` | `DIM_OFICINAS` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
 | `DT_DIMENSIONES` | `DIM_OFICIALES`| CONTIENE INFORMACIÓN REFERENTE A LOS OFICIALES/GERENTES DE SUCURSALES                                      |
 
---
 
 ## ORCL
-
 *AGREGAR DESCRIPCION DE ORCL*
+
 #### INFORMACION DE CLIENTES
-
 *Investigar origen de esta data*
-| ESQUEMA    | TABLA          | DESCRIPCIÓN                                                                                                                            |
-| ---------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `EDWIN`    | `TMP_CARTERA`  | ESTA TABLA CONTIENE INFORMACIÓN DEL **CARTERIZADO** y **OFICINA** DE TODOS LOS CLIENTES                                                |
-| `DWADMIN`  | `CLIENTES`     | CONTIENE TODOS LOS CLIENTES DE BANCO SIN DINTINCIÓN ALGUNA Y CONSIDERA CLIENTES CONCOMUNADOS, AUNQUE TIENE MENOS COLUMNAS              |
-| `DWADMIN`  | `PERSONA`      | CONTIENE TODOS INFORMACIÓN PERSONAL DE CADA CLIENTE CON RELACIÓN A LA TABLA `DWADMIN.CLIENTES`(Telefonos, Direcciones, Profesión, etc) |
 
---
+| ESQUEMA    | TABLA          | DESCRIPCIÓN                                                                                                                          |
+| ---------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `EDWIN`    | `TMP_CARTERA`  | ESTA TABLA CONTIENE INFORMACIÓN DEL **CARTERIZADO** y **OFICINA** DE TODOS LOS CLIENTES                                               |
+| `DWADMIN`  | `CLIENTES`     | CONTIENE TODOS LOS CLIENTES DE BANCO SIN DINTINCIÓN ALGUNA Y CONSIDERA CLIENTES CONCOMUNADOS, AUNQUE TIENE MENOS COLUMNAS             |
+| `DWADMIN`  | `PERSONA`      | CONTIENE TODOS INFORMACIÓN PERSONAL DE CADA CLIENTE CON RELACIÓN A LA TABLA `DWADMIN.CLIENTES`(Telefonos, Direcciones, Profesión, etc)|
 
 #### DIMENSIONES
-
 *Investigar origen de esta data*
+
 | ESQUEMA   | TABLA          | DESCRIPCIÓN                                                                                                |
 | --------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
 | `DWADMIN` | `OFICINA`      | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
@@ -52,24 +50,24 @@ select * from all_db_links;
 | `DWADMIN` | `CAJEROS_ATM`  | DIMENSIÓN DE CADA CAJERO ACTIVO                                                                            |
 
 > TESORERIA
-
 La gestion de La información de ATMs en `ORCL` es manual
+
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
 | `TESORERIA` | `CAJEROS`      | DIMENSIÓN HISTORICO DE CADA CAJERO                                                                         |
 
 
 #### TRANSACCIONES
-
 *Investigar origen de esta data*
+
 | ESQUEMA     | TABLA                            | DESCRIPCIÓN                                                                              |
 | ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
 | `DWADMIN`   | `NEPT_REPOSITORIO_TRANSACCIONES` | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP                                     |
 | `DWADMIN`   | `TRANSACCIONES_CUENTAS`          | *LEVANTAR INFORMACIÓN*                                                                   |
 
 > TESORERIA
-
 *Investigar origen de esta data*
+
 | ESQUEMA     | TABLA                            | DESCRIPCIÓN                                                                              |
 | ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
 | `TESORERIA` | `TRANSACCIONES_CAJERO`           | CONTIENE LAS TRANSACCIONES POR CAJERO O<sub> ATMs </sub>                                 |
@@ -77,6 +75,7 @@ La gestion de La información de ATMs en `ORCL` es manual
 #### PRODUCTOS [TARJETA DE CREDITOS/DEBITO,PRESTAMOS, CERTIDICADOS]
 En `SAT` podremos encontrar todo lo referente a ... Y con el Dblink de `Sunrise` podremos acceder a data verificada
 *Investigar origen de esta data*
+
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
 | `DWADMIN`   | `SAT_TARJETA`  | CONTIENE TODAS LAS TARJETAS YA SEA `TD, TC O TP`, TIPO DE TARJETA EN EL CAMPO `TIPOTARJ`, EL NUMEROD DE CONTRATO ES LA CONCATENACIÓN DE `CENTALTA` Y  `CUENTA` Y ESTÁ HOMOLOGADA CON CLIENTES POR EL CAMPO `NUMDOC` (ES EL DOCUMENTO DEL CLIENTE)|
@@ -85,16 +84,18 @@ En `SAT` podremos encontrar todo lo referente a ... Y con el Dblink de `Sunrise`
 
 #### SISTEMAS DE NOMINAS
 *Investigar origen de esta data*
+
 | ESQUEMA     | TABLA           | DESCRIPCIÓN                                                                                                                         |
 | ----------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `SIEBEL8`   | `S_SRV_REQ`     | `SERVICES REQUEST`, TIENE CADA SOLICITUD DE NOMINA EN **SIEBEL**, ES UN REGISTRO UNICO POR SOLICITUD EL NUMERO DE SOLICITUD `SR_NUM`|
 | `SIEBEL8`   | `CX_SR_NOMINA`  | CONTIENE CADA CANDIDATO DE CADA SOLICITÚD EN `SERVICES REQUEST`,SE HOMOLOGAN CON `CX_SR_NOMINA.PAR_ROW_ID = S_SRV_REQ.ROW_ID`       |
---
 
 ## AS400
 Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN`, sí consultas con el esquema (dwadmin) y el nombre de la tabla no deberias de tener problemas para conseguirla. Esta información proviene directamente de los sistema de `AS400`.
-#### TRANSACCIONES  
+
+#### TRANSACCIONES 
 Esta información proviene directamente de los sistema de `AS400`.
+
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                              |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------|
 | `BHDPASFIL` | `ACHTRAN`      | ESTA TABLA CONTIENE TODOS LAS TRANSACCIONES **ACH**                                      |
