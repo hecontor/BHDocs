@@ -66,7 +66,7 @@ La gestion de La información de ATMs en `ORCL` es manual
 | `DWADMIN`   | `TRANSACCIONES_CUENTAS`          | *LEVANTAR INFORMACIÓN*                                                                   |
 
 > TESORERIA
-*Investigar origen de esta data*
+> *Investigar origen de esta data*
 
 | ESQUEMA     | TABLA                            | DESCRIPCIÓN                                                                              |
 | ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
