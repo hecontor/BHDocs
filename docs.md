@@ -94,7 +94,8 @@ En `SAT` podremos encontrar todo lo referente a ... Y con el Dblink de `Sunrise`
 
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
-| `DWADMIN`   | `SAT_TARJETA`  | CONTIENE TODAS LAS TARJETAS YA SEA `TC, TC O TP` EN EL CAMPO `TIPOTARJ`                                    |
+| `DWADMIN`   | `SAT_TARJETA`  | CONTIENE TODAS LAS TARJETAS YA SEA `TD, TC O TP` EN EL CAMPO `TIPOTARJ`, EL NUMEROD DE CONTRATO ES LA CONCATENACIÓN DE `CENTALTA` Y  `CUENTA` Y ESTÁ HOMOLOGADA CON CLIENTES POR EL CAMPO `NUMDOC` (ES EL DOCUMENTO DEL CLIENTE)|
+| `DWADMIN`   | `SAT_CONTRATO` | CONTIENE TODOS LOS CONTRATOS |
 
 #### DWADMIN 
 
