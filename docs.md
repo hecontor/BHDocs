@@ -89,9 +89,15 @@ Donde `BRTRAN` es el nombre de archvo o tabla y `BHDBREFIL` el  nombre del esque
 
 
 ## PRODUCTOS [TARJETA DE CREDITOS/DEBITO,PRESTAMOS, CERTIDICADOS]
-#### SAT
+#### DWADMIN - SAT
 En `SAT` podremos encontrar todo lo referente a ... Y con el Dblink de `Sunrise` podremos acceder a data verificada
 
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
 | ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
-| ` `         | `SAT_TARJETA`  | CONTIENE TODAS LAS TARJETAS YA SEA `TC, TC O TP` EN EL CAMPO `TIPOTARJ`                                    |
+| `DWADMIN`   | `SAT_TARJETA`  | CONTIENE TODAS LAS TARJETAS YA SEA `TC, TC O TP` EN EL CAMPO `TIPOTARJ`                                    |
+
+#### DWADMIN 
+
+| ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
+| ----------- | -------------- | -----------------------------------------------------------------------------------------------------------|
+| `DWADMIN`   | `TARJETA_CLAVE`| CONTIENE TODAS LAS TARJETAS DE CLAVE DE LOS CLIENTES, HOLOGADAS CON LOS CLIENTES POR EL CAMPO `TJPERS`     |
