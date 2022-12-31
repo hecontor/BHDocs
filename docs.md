@@ -49,7 +49,7 @@ select * from all_db_links;
 | `DWADMIN` | `CARTERA`      | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                                      | 
 | `DWADMIN` | `CAJEROS_ATM`  | DIMENSIÓN DE CADA CAJERO ACTIVO                                                                            |
 
-> TESORERIA
+###### TESORERIA
 La gestion de La información de ATMs en `ORCL` es manual
 
 | ESQUEMA     | TABLA          | DESCRIPCIÓN                                                                                                |
@@ -65,8 +65,8 @@ La gestion de La información de ATMs en `ORCL` es manual
 | `DWADMIN`   | `NEPT_REPOSITORIO_TRANSACCIONES` | CONTIENE TODAS LAS TRANSACCIONES POR CANALES IBP/MBP                                     |
 | `DWADMIN`   | `TRANSACCIONES_CUENTAS`          | *LEVANTAR INFORMACIÓN*                                                                   |
 
-> TESORERIA
-> *Investigar origen de esta data*
+###### TESORERIA
+*Investigar origen de esta data*
 
 | ESQUEMA     | TABLA                            | DESCRIPCIÓN                                                                              |
 | ----------- | ---------------------------------| -----------------------------------------------------------------------------------------|
