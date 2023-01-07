@@ -89,6 +89,10 @@ En `SAT` podremos encontrar todo lo referente a ... Y con el Dblink de `Sunrise`
 | ----------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `SIEBEL8`   | `S_SRV_REQ`     | `SERVICES REQUEST`, TIENE CADA SOLICITUD DE NOMINA EN **SIEBEL**, ES UN REGISTRO UNICO POR SOLICITUD EL NUMERO DE SOLICITUD `SR_NUM`|
 | `SIEBEL8`   | `CX_SR_NOMINA`  | CONTIENE CADA CANDIDATO DE CADA SOLICITÚD EN `SERVICES REQUEST`,SE HOMOLOGAN CON `CX_SR_NOMINA.PAR_ROW_ID = S_SRV_REQ.ROW_ID`       |
+| `SIEBEL8`   | `S_CONTACT`     | CONTIENE LA INFORMACIÓN DE CONTACTO DE CADA CANDIDATO, SU CAMPO `ROW_ID` SE HOMOLOGA CON `CON_ID` DE `CX_SR_NOMINA`         |
+| `SIEBEL8`   | `S_ORG_EXT`     | *Levantar información*         |
+
+Unas de las refencias en las cuales se puede aprender de como se usan las tablas anteriores puede ser el proceso de `PENTAHO` llamado `D_SIG_PREAPROVADA_CLIENT_NOM`.
 
 ## AS400
 Hay muchos de los archivos de AS400 han sido cargados a `ORCL` principalmente al esquema `DWADMIN`, sí consultas con el esquema (dwadmin) y el nombre de la tabla no deberias de tener problemas para conseguirla. Esta información proviene directamente de los sistema de `AS400`.
@@ -117,6 +121,15 @@ SELECT *
 ``` 
 Donde `BHDBREFIL` el  nombre del esquema/libreria.
 
+## Abanks
 
+#### Prestamos 
+*Levantar información*
+Esta información tambien se tiene en `ORCL` en el esquema de `TEMPUSR`, a la data original solo tenemos acceso a traves del servidor de `PENTAHO` en la conexión llamada `nodop`. esta información ha sido cargada a ORCL con la terminacion `_NODOP` al final del nombre de la tabla.
 
-
+| ESQUEMA | TABLA          | DESCRIPCIÓN                                                                              |
+| ----- | -------------- | -----------------------------------------------------------------------------------------|
+| `N/a` | `PR_PRESTAMOS` | Contiene el maestro de prestamos hasta el 2014                                      |
+| `N/a` | `PR_MOVIMIENTOS` | Contiene cada movimiento de cada prestamo en `PR_PRESTAMOS`                                 |
+| `N/a` | `PR_SALDOS_MOVIMEINTO` | Contiene todos los saldos e información de cada movimiento de los prestamos, homologao por el campo `SECUENCIA`     |
+ 
