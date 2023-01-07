@@ -17,6 +17,16 @@ Desde <sub>ORCL</sub> puedes acceder a los datos de producción en fenix sí le 
 ``` 
 select * from all_db_links;
 ```
+
+#### PRODUCTOS
+*Investigar origen de esta data*
+
+| ESQUEMA        | TABLA      | DESCRIPCIÓN                                                                                  |
+| -------------- | -----------| -------------------------------------------------------------------------------------------- |
+| `DT_PRODUCTOS` | `MAESTRO_PRESTAMOS` | CONTIENE LOS PRESTAMOS                                                              |
+
+
+
 #### DIMENSIONES 
 *Investigar origen de esta data*
 
@@ -24,7 +34,7 @@ select * from all_db_links;
 | ---------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
 | `DT_DIMENSIONES` | `DIM_OFICINAS` | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
 | `DT_DIMENSIONES` | `DIM_OFICIALES`| CONTIENE INFORMACIÓN REFERENTE A LOS OFICIALES/GERENTES DE SUCURSALES                                      |
-
+| `DT_DIMENSIONES` | `DIM_CARTERA`  | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>                                                            |
 
 ## ORCL
 *AGREGAR DESCRIPCION DE ORCL*
@@ -46,7 +56,7 @@ select * from all_db_links;
 | `DWADMIN` | `OFICINA`      | CONTIENE INFORMACIÓN REFERENTE A LAS OFICINAS/SUCURSALES                                                   |
 | `DWADMIN` | `OFICIALES`    | CONTIENE INFORMACIÓN REFERENTE A LOS OFICIALES/GERENTES DE SUCURSALES                                      | 
 | `DWADMIN` | `UNIDADES`     | *LEVANTAR INFORMACIÓN*                                                                                     |
-| `DWADMIN` | `CARTERA`      | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>  <sub> INTERNA </sub>                                      | 
+| `DWADMIN` | `CARTERA`      | CONTIENE INFORMACION DE LAS <sub>CARTERAS</sub>                                                            | 
 | `DWADMIN` | `CAJEROS_ATM`  | DIMENSIÓN DE CADA CAJERO ACTIVO                                                                            |
 
 ###### TESORERIA
