@@ -143,3 +143,12 @@ Esta información tambien se tiene en `ORCL` en el esquema de `TEMPUSR`, a la da
 | `N/a` | `PR_MOVIMIENTOS` | Contiene cada movimiento de cada prestamo en `PR_PRESTAMOS`                                 |
 | `N/a` | `PR_SALDOS_MOVIMEINTO` | Contiene todos los saldos e información de cada movimiento de los prestamos, homologao por el campo `SECUENCIA`     |
  
+# Tablas especificas
+*Agregar descripción*
+## Tabla de empleados en fenix
+```
+SELECT
+ * 
+FROM
+ DT_REGULATORIOS.COLABORADORES_BHDLEON;
+```
